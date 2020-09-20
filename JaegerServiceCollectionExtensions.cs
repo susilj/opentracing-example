@@ -12,7 +12,7 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class JaegerServiceCollectionExtensions
     {
-        private static readonly Uri _jaegerUri = new Uri("http://localhost:14268/api/traces");
+        private static readonly Uri _jaegerUri = new Uri("http://jaeger:14268/api/traces");
 
         public static IServiceCollection AddJaeger(this IServiceCollection services)
         {
